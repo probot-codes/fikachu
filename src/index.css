@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(135deg, #f6f8ff 0%, #e9f0ff 100%);
+	position: relative;
+	/* Creates a new stacking context */
+}
+
+.gradient-button {
+	background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+}
+
+.platform-card {
+	transition: all 0.3s ease;
+}
+
+.platform-card:hover {
+	transform: translateY(-5px);
+}
+
+.stats-counter {
+	animation: countUp 2s ease-out;
+}
+
+@keyframes countUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
